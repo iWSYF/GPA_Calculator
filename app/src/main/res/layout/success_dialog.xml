@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/successConstraintLayout"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutDialog"
+        android:layout_width="301dp"
+        android:layout_height="185dp"
+        android:background="@drawable/custom_pop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/successTitle"
+            android:layout_width="297dp"
+            android:layout_height="72dp"
+            android:gravity="center_horizontal"
+            android:paddingTop="0dp"
+            android:text="Your GPA"
+            android:textColor="#114943"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/layoutDialog"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/successDesc"
+            android:layout_width="299dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center_horizontal"
+            android:text="Congratulations!"
+            android:textSize="35dp"
+            android:textColor="#114943"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/successTitle" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

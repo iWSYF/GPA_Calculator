@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#EFEFEF"
+    android:orientation="vertical">
+
+    <!-- First Layout -->
+
+
+    <!-- Second Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/button_Add"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/round_click"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/courseGrades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/GPA_OUT_OF"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                android:text="GPA out of:"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/Radio_Scale4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:checked="false"
+                    android:backgroundTint="@color/round_click"
+                    android:text="4"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/Radio_Scale5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="5" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Cumulative_GPA"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="Calculate Cumulative GPA"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="142dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="-15dp"
+            android:layout_marginEnd="200dp"
+            android:hint="GPA"
+            app:boxStrokeColor="@color/cyan"
+            app:endIconTint="@color/cyan"
+            app:hintTextColor="@color/round_click"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconTint="@color/round_click"
+            app:suffixTextColor="@color/round_click">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cumulativeGPA"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="142dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="250dp"
+            android:hint="Hours"
+            app:boxStrokeColor="@color/cyan"
+            app:endIconTint="@color/cyan"
+            app:hintTextColor="@color/round_click"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconTint="@color/round_click"
+            app:suffixTextColor="@color/round_click">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cumulativeHours"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/button_CalculateGPA"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="@color/round_click"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Calculate GPA"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </Button>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#6DACA6</color>
+    <color name="cyan">#17C4B3</color>
+    <color name="round_click">#114E49</color>
+    <color name="click">#11645D</color>
+    <color name="cca">#78AAA5</color>
+    <color name="coo2">#A9D8D4</color>
+    <color name="lavender">#8692f7</color>
+    <color name="green">#50c878</color>
+</resources>

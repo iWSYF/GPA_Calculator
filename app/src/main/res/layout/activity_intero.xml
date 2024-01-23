@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8F1EF"
+    tools:context=".intro_Activity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="433dp"
+        android:layout_height="454dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.482"
+        app:srcCompat="@drawable/modern_student_life">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="338dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="68dp"
+        android:text="Welcome To GPA Calculator"
+        android:textAlignment="center"
+        android:textColor="#114943"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/Button_start_intro"
+        android:layout_width="134dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="#1D635D"
+        android:drawableRight="@drawable/ic_calculate"
+        android:insetLeft="4dp"
+        android:text="START"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.542" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
